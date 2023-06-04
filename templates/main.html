@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <audio id="scramble-sound" src="{{ url_for('static', filename='scramble.mp3') }}" type="audio/mpeg"></audio>
+</head>
+<body>
+    <h1 data-value="Security is an illusion">Security is an illusion</h1>
+    <div id="data" style="display: none;">
+        <p>Some random data I found about you just now ^_^</p>
+        <p>IP: {{ data.ip }}</p>
+        <p>City: {{ data.city }}</p>
+        <p>Region: {{ data.region }}</p>
+        <p>Country: {{ data.country }}</p>
+        <p>Latitude: {{ data.latitude }}</p>
+        <p>Longitude: {{ data.longitude }}</p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
