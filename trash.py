@@ -1,4 +1,4 @@
-
+import sqlite3
 schema_file_path = "data/schema.sql"
 database_file_path = "data/database.db"
 
