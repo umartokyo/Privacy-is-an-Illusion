@@ -11,17 +11,18 @@ def get_data(ip_address):
     response = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
     data = {
         "ip": ip_address,
-        "version": response.get('version'),
-        "city": response.get("city"),
-        "region": response.get("region"),
-        "country": response.get("country_name"),
-        "latitude": response.get("latitude"),
-        "longitude": response.get("longitude"),
-        "postal": response.get("postal"),
-        "org": response.get("org"),
+        "version": response.get('version') or "N/A",
+        "city": response.get("city") or "N/A",
+        "region": response.get("region") or "N/A",
+        "country": response.get("country_name") or "N/A",
+        "latitude": response.get("latitude") or "N/A",
+        "longitude": response.get("longitude") or "N/A",
+        "postal": response.get("postal") or "N/A",
+        "org": response.get("org") or "N/A",
     }
     add_data(data)
     return data
+
 
 schema_file_path = "data/schema.sql"
 database_file_path = "data/database.db"
