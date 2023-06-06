@@ -17,4 +17,3 @@ By the initial plan, I needed to host the website to the web, generate the qr-co
 If you want to play around with the application, here are the libraries used: 
 - flask
 - requests
-
