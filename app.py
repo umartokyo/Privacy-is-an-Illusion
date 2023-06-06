@@ -2,8 +2,11 @@ from flask import Flask, render_template
 from bridge import get_ip, get_data
 import os
 
+with open("key.txt", "r") as key:
+    secret_key = key
+
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "secret key"
+app.config["SECRET_KEY"] = secret_key
 
 @app.route('/', methods=["GET", "POST"])
 def trap():
