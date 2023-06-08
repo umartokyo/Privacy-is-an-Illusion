@@ -11,7 +11,7 @@ By the initial plan, I needed to host the website to the web, generate the qr-co
 
 ## Access
 - Sketch: sketch.txt
-- Website: [docker hub](https://hub.docker.com/repository/docker/umarik/privacyisillusion/general)
+- Website: video.mov | [docker hub](https://hub.docker.com/repository/docker/umarik/privacyisillusion/general)
 
 ## Libraries
 If you want to play around with the application, here are the libraries used: 
